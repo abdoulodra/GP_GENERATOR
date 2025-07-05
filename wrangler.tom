@@ -11,10 +11,13 @@ entry-point = "."
 command = "npm run build"
 
 [vars]
-OPENAI_API_KEY = "ta_clé_openai"
-NEXT_PUBLIC_FIREBASE_API_KEY = "clé"
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = "..."
-NEXT_PUBLIC_FIREBASE_PROJECT_ID = "..."
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = "..."
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = "..."
-NEXT_PUBLIC_FIREBASE_APP_ID = "..."
+OPENAI_API_KEY = "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"
+const firebaseConfig = {
+  apiKey: "AIzaSyAo5Xoug3rTDr-IMBBgBXk_505Hww22vIo",
+  authDomain: "gpt-story-dd805.firebaseapp.com",
+  projectId: "gpt-story-dd805",
+  storageBucket: "gpt-story-dd805.firebasestorage.app",
+  messagingSenderId: "257524173784",
+  appId: "1:257524173784:web:e39612c5ffeadf16af80ad",
+  measurementId: "G-XP8TQKF4LG"
+};
