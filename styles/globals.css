@@ -1,1 +1,115 @@
+/* globals.css */
+
+/* Import de la police futuriste Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Tailwind CSS de base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body - fond sombre avec dégradé léger */
+body {
+  @apply bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 text-white font-futuristic min-h-screen;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Texte néon bleu */
+.text-neon-blue {
+  color: #4D96FF;
+  text-shadow:
+    0 0 5px #4D96FF,
+    0 0 10px #4D96FF,
+    0 0 20px #4D96FF,
+    0 0 40px #A259FF;
+  transition: color 0.3s ease;
+}
+
+/* Texte néon violet */
+.text-neon-purple {
+  color: #A259FF;
+  text-shadow:
+    0 0 5px #A259FF,
+    0 0 10px #A259FF,
+    0 0 20px #A259FF,
+    0 0 40px #4D96FF;
+  transition: color 0.3s ease;
+}
+
+/* Animation de survol néon */
+.hover-neon:hover {
+  color: #A259FF !important;
+  text-shadow:
+    0 0 8px #A259FF,
+    0 0 15px #A259FF,
+    0 0 25px #A259FF,
+    0 0 50px #4D96FF;
+  transition: all 0.4s ease;
+}
+
+/* Boutons futuristes */
+.button-futuristic {
+  @apply bg-neonBlue hover:bg-neonPurple text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out;
+  box-shadow:
+    0 0 10px #4D96FF,
+    0 0 20px #4D96FF;
+}
+
+/* Ombres textuelles légères */
+.shadow-text {
+  text-shadow: 1px 1px 2px #000000AA;
+}
+
+/* Animation de fade-in douce */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #222;
+}
+::-webkit-scrollbar-thumb {
+  background: #4D96FF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #A259FF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A259FF;
+}
+
+/* Responsive font size for headings */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 /* Styles globaux */
