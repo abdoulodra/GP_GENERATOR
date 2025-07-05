@@ -1,0 +1,1 @@
+// Composant drag & drop d'image

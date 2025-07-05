@@ -1,0 +1,1 @@
+// Appel à l'API Whisper OpenAI

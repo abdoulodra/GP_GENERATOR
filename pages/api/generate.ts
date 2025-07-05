@@ -1,0 +1,1 @@
+// API génération d'histoire
